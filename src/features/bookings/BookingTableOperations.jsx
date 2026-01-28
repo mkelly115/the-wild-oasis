@@ -2,6 +2,8 @@ import SortBy from "../../ui/SortBy";
 import Filter from "../../ui/Filter";
 import TableOperations from "../../ui/TableOperations";
 
+// ALTER HERE
+
 function BookingTableOperations() {
   return (
     <TableOperations>
