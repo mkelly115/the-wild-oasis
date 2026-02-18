@@ -17,14 +17,26 @@ const Button = styled.button`
   margin: 20px;
   cursor: pointer;
 `
+const Input = styled.input`
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0.8rem 1.2rem;
+`
+const StyledApp = styled.div`
+  background-color: orangered;
+  padding: 20px;
+`
 
 function App() {
   return (
-    <div>
+    <StyledApp>
       <H1>The Wild Oasis</H1>
       <Button onClick={()=> alert("Check In!")}>Check in!</Button>
       <Button onClick={()=> alert("Check Out!")}>Check out!</Button>
-    </div>
+
+      <Input type="number" placeholder="Number of guests" />
+      <Input type="number" placeholder="Number of guests" />
+    </StyledApp>
   );
 }
 
