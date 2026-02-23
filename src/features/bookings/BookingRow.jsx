@@ -84,3 +84,5 @@ function BookingRow({
 }
 
 export default BookingRow;
+
+// ADD NEW ROWS
