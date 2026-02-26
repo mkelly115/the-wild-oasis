@@ -86,3 +86,4 @@ function BookingRow({
 export default BookingRow;
 
 // ADD NEW ROWS
+// Fix VITE config for planned expansion
