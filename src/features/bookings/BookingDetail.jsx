@@ -50,3 +50,5 @@ function BookingDetail() {
 }
 
 export default BookingDetail;
+
+// ADD HERE
