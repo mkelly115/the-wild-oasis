@@ -6,3 +6,4 @@ This README will contain the wild oasis important information
 
 -3 Initial Tables Created
 - Foreign Keys Added
+- Altered settings for Cabin read files
