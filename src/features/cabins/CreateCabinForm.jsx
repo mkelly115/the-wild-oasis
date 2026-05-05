@@ -1,5 +1,3 @@
-import styled from "styled-components";
-
 import Input from "../../ui/Input";
 import Form from "../../ui/Form";
 import Button from "../../ui/Button";
@@ -30,7 +28,7 @@ function CreateCabinForm() {
   });
 
   function onSubmit(data) {
-    mutate(data);
+    mutate({ ...data, image: data.image[0] });
   }
 
   function onError(errors) {
@@ -69,6 +67,7 @@ function CreateCabinForm() {
           id="regularPrice"
           {...register("regularPrice", {
             required: "This field is required",
+            valueAsNumber: true,
             min: {
               value: 1,
               message: "Capacity should be at least 1",
@@ -84,6 +83,7 @@ function CreateCabinForm() {
           defaultValue={0}
           {...register("discount", {
             required: "This field is required",
+            valueAsNumber: true,
             validate: (value) =>
               value <= getValues().regularPrice ||
               "Discount should be less than regular price",
