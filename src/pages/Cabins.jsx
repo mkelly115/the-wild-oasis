@@ -18,7 +18,7 @@ function Cabins() {
         <AddCabin />
       </Row>
     </>
-  );
+  )
 }
 
 export default Cabins;
