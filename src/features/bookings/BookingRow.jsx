@@ -53,7 +53,7 @@ function BookingRow({
     "checked-in": "green",
     "checked-out": "silver",
   };
-
+// BOOKING COLORS ARE NOT SHOWING NEEDS FIX
   return (
     <Table.Row>
       <Cabin>{cabinName}</Cabin>
@@ -84,6 +84,3 @@ function BookingRow({
 }
 
 export default BookingRow;
-
-// ADD NEW ROWS
-// Fix VITE config for planned expansion
