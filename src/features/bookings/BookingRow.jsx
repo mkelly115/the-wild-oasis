@@ -53,7 +53,9 @@ function BookingRow({
     "checked-in": "green",
     "checked-out": "silver",
   };
-// BOOKING COLORS ARE NOT SHOWING NEEDS FIX
+  // BOOKING COLORS ARE NOT SHOWING NEEDS FIX
+  console.log(status);
+  console.log(statusToTagName[status]);
   return (
     <Table.Row>
       <Cabin>{cabinName}</Cabin>
@@ -76,7 +78,7 @@ function BookingRow({
         </span>
       </Stacked>
 
-      <Tag type={statusToTagName[status]}>{status.replace("-", " ")}</Tag>
+      <Tag $type={statusToTagName[status]}>{status?.replace("-", " ")}</Tag>
 
       <Amount>{formatCurrency(totalPrice)}</Amount>
     </Table.Row>
