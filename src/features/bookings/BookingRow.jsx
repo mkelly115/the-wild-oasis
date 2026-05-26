@@ -54,8 +54,7 @@ function BookingRow({
     "checked-out": "silver",
   };
   // BOOKING COLORS ARE NOT SHOWING NEEDS FIX
-  console.log(status);
-  console.log(statusToTagName[status]);
+
   return (
     <Table.Row>
       <Cabin>{cabinName}</Cabin>
