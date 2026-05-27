@@ -2,10 +2,6 @@ import SortBy from "../../ui/SortBy";
 import Filter from "../../ui/Filter";
 import TableOperations from "../../ui/TableOperations";
 
-// ALTER HERE
-
-// Steps 1-5 Need to be added and value fields altered
-
 function BookingTableOperations() {
   return (
     <TableOperations>
