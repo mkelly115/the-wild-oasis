@@ -6,7 +6,7 @@ export function useCheckout() {
   const queryClient = useQueryClient();
 
   const { mutate: checkout, isLoading: isCheckingOut } = useMutation({
-    mutationFn: ({ bookingId }) =>
+    mutationFn: (bookingId) =>
       updateBooking(bookingId, {
         status: "checked-out",
       }),
@@ -14,10 +14,10 @@ export function useCheckout() {
     onSuccess: (data) => {
       toast.success(`Booking #${data.id} successfully checked out`);
       queryClient.invalidateQueries({ active: true });
-    
     },
 
     onError: () => toast.error("There was a problem while checking out"),
   });
+
   return { checkout, isCheckingOut };
 }
