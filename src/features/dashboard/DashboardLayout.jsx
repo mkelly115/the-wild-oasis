@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Stats from "./stats";
+import Stats from "./Stats";
 import { useRecentBookings } from "./useRecentBooking";
 import { useRecentStays } from "./useRecentStays";
 import { useCabins } from "../cabins/useCabins";
